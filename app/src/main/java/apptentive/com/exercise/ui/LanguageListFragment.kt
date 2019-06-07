@@ -32,7 +32,7 @@ class LanguageListFragment : Fragment() {
         val adapter = LanguageListAdapter()
         adapter.languageClickListener = object : LanguageListAdapter.LanguageClickListener {
             override fun onClick(language: Language) {
-                // TODO: move the business logic into view model
+                // TODO: Task 3 - move the business logic into view model
                 openLanguageDetails(language.name)
             }
         }
@@ -41,7 +41,7 @@ class LanguageListFragment : Fragment() {
             adapter.submitList(items)
         })
         binding.fab.setOnClickListener {
-            // TODO: move the business logic into view model
+            // TODO: Task 4 - move the business logic into view model
             openAddLanguage()
         }
 

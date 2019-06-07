@@ -10,11 +10,11 @@ class LanguageListViewModel internal constructor(repository: LanguageRepository)
     val itemList: LiveData<List<Language>> = repository.getLanguages(SortMode.DEFAULT, favoritesOnly = false)
 
     fun sort(sortMode: SortMode) {
-        TODO("Sort language list")
+        TODO("Task 1 - Sort language list")
     }
 
     fun filterByFavorite(flag: Boolean) {
-        TODO("Filter language list by favorites")
+        TODO("Task 2 - Filter language list by favorites")
     }
 }
 
